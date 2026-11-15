@@ -1,7 +1,9 @@
 {
-  "name": "myweb",
+  "name": "maocat-portfolio",
   "private": true,
   "version": "0.0.0",
+  "description": "个人作品集网站：深色主题单页，React + TypeScript + Tailwind CSS 构建，含滚动动画与移动端适配。",
+  "homepage": "https://maocat-portfolio.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",

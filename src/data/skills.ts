@@ -1,6 +1,6 @@
 /**
  * 技能数据（PRD：关于我页面展示技能列表）
- * 按分类存放，方便在界面上分组渲染。
+ * 只列 GitHub 仓库里实际用过的技术，避免写成一份「什么都会」的清单。
  */
 
 /** 单项技能 */
@@ -15,15 +15,13 @@ export const skills: Skill[] = [
   // 前端
   { name: "React", category: "前端" },
   { name: "TypeScript", category: "前端" },
+  { name: "JavaScript", category: "前端" },
   { name: "Tailwind CSS", category: "前端" },
-  { name: "Vite", category: "前端" },
   { name: "HTML / CSS", category: "前端" },
-  // 后端
-  { name: "Node.js", category: "后端" },
-  { name: "Express", category: "后端" },
-  { name: "REST API", category: "后端" },
-  // 工程化与协作
-  { name: "Git", category: "工程化" },
-  { name: "ESLint / Prettier", category: "工程化" },
-  { name: "Vitest", category: "工程化" },
+  // 工程化与部署
+  { name: "Vite", category: "工程化" },
+  { name: "Git / GitHub", category: "工程化" },
+  { name: "Vercel", category: "工程化" },
+  // 编程基础
+  { name: "C", category: "编程基础" },
 ];

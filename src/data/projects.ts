@@ -1,6 +1,7 @@
 /**
  * 项目数据（PRD：项目名称、截图、简短描述、技术栈、项目链接）
- * 数据集中放在 TypeScript 数组中，新增项目只需追加一条记录。
+ * 内容来自 GitHub 公开仓库（github.com/maocat823），说明文字按其 README 与仓库描述整理。
+ * 新增项目只需往数组里追加一条。
  */
 
 /** 单个项目 */
@@ -26,26 +27,51 @@ export const projects: Project[] = [
     id: "portfolio",
     name: "个人作品集",
     description:
-      "使用 React + TypeScript + Tailwind CSS 构建的深色主题作品集，包含滚动动画与响应式布局。",
+      "深色主题的单页作品集，React 19 + Tailwind CSS v4 实现渐变强调色、滚动进场动画与移动端适配——这页就是它本身。",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion"],
+    image: "/projects/portfolio.png",
+    liveUrl: "https://maocat-portfolio.vercel.app",
+    repoUrl: "https://github.com/maocat823/maocat-portfolio",
+  },
+  {
+    id: "pomodoro",
+    name: "番茄钟",
+    description:
+      "简洁的番茄钟计时器，帮助你保持专注、高效工作；React 18 + TypeScript 管理计时与状态切换，界面用 Tailwind CSS 搭配 lucide 图标。",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/",
+    repoUrl: "https://github.com/maocat823/Pomodoro-Timer",
   },
   {
-    id: "dashboard",
-    name: "数据看板",
+    id: "todo-list",
+    name: "待办清单",
     description:
-      "面向内部团队的可视化看板，支持多维度筛选与图表联动，首屏加载时间控制在 1s 内。",
-    tech: ["React", "ECharts", "Vite", "REST API"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/",
+      "原生 JavaScript 写的待办应用，支持优先级、编辑与筛选，数据保存在浏览器 localStorage 里，刷新不丢。",
+    tech: ["JavaScript", "HTML", "CSS", "Vite"],
+    repoUrl: "https://github.com/maocat823/Todo-List",
   },
   {
-    id: "cli-tool",
-    name: "脚手架工具",
+    id: "birthday-card",
+    name: "星空生日贺卡",
     description:
-      "命令行项目脚手架，一条命令生成规范化的前端工程结构，内置 ESLint、Prettier 与测试配置。",
-    tech: ["Node.js", "TypeScript", "Commander"],
-    repoUrl: "https://github.com/",
+      "一封藏在星空、粉笔字和 3D 粒子蛋糕里的生日祝福，基于 React 19 + TanStack Start，用 Radix UI 与 Tailwind CSS 搭界面。",
+    tech: ["React", "TanStack Start", "Radix UI", "Tailwind CSS"],
+    repoUrl: "https://github.com/maocat823/starry-2329-birthday-card",
+  },
+  {
+    id: "lemonfate",
+    name: "Lemonfate 服务器官网",
+    description:
+      "为 Minecraft 服务器 Lemonfate 做的宣传站点，纯 HTML / CSS / JavaScript 页面，部署在 Vercel 上。",
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://lemonfate-web.vercel.app",
+    repoUrl: "https://github.com/maocat823/Lemonfate-Web",
+  },
+  {
+    id: "learning",
+    name: "C 语言练习",
+    description:
+      "大一期间的 C 语言练习合集，从基础语法到小程序，按阶段整理，用来记录学习过程。",
+    tech: ["C"],
+    repoUrl: "https://github.com/maocat823/learning",
   },
 ];

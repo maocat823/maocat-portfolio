@@ -36,9 +36,25 @@ export default function About() {
               </p>
             ))}
 
-            <p className="text-sm text-muted">
-              所在城市：<span className="text-ink">{profile.location}</span>
-            </p>
+            {/* 所在地与就读学校：来自 profile.ts，学校为空时自动隐藏 */}
+            <div className="space-y-1 text-sm text-muted">
+              <p>
+                所在地区：<span className="text-ink">{profile.location}</span>
+              </p>
+              {profile.school && (
+                <p>
+                  就读于{" "}
+                  <a
+                    href={profile.school.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-ink underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-to"
+                  >
+                    {profile.school.name}
+                  </a>
+                </p>
+              )}
+            </div>
           </Reveal>
 
           <Reveal delay={0.1}>
