@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+ * 设计令牌（AGENTS.md：深色主题 + 渐变强调色）
+ * 在 @theme 中声明后即可作为 bg-night / text-ink 之类的工具类使用。
+ * ------------------------------------------------------------------------- */
+@theme {
+  /* 背景色 */
+  --color-night: #0a0a0a; /* 页面背景 */
+  --color-panel: #141414; /* 卡片 / 面板背景 */
+
+  /* 文字色 */
+  --color-ink: #ffffff; /* 主文字 */
+  --color-muted: #a1a1aa; /* 次要文字 */
+
+  /* 渐变强调色（紫 -> 粉 -> 青） */
+  --color-accent-from: #8b5cf6;
+  --color-accent-via: #ec4899;
+  --color-accent-to: #22d3ee;
+}
+
+/* ---------------------------------------------------------------------------
+ * 基础样式
+ * ------------------------------------------------------------------------- */
+@layer base {
+  html {
+    /* 平滑滚动：页内锚点跳转时缓动（AGENTS.md 要求） */
+    scroll-behavior: smooth;
+    /* 固定页头高度，避免锚点内容被遮住 */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-night text-ink antialiased;
+  }
+
+  /* 尊重系统的「减少动态效果」设置 */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * 可复用工具类：渐变文字
+ * 用法：<span className="text-gradient">文字</span>
+ * ------------------------------------------------------------------------- */
+@utility text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-accent-from),
+    var(--color-accent-via),
+    var(--color-accent-to)
+  );
+  background-clip: text;
+  color: transparent;
+}
