@@ -16,11 +16,13 @@ export const skills: Skill[] = [
   { name: "React", category: "前端" },
   { name: "TypeScript", category: "前端" },
   { name: "JavaScript", category: "前端" },
+  { name: "Zustand", category: "前端" },
   { name: "Tailwind CSS", category: "前端" },
   { name: "HTML / CSS", category: "前端" },
   // 工程化与部署
   { name: "Vite", category: "工程化" },
   { name: "Git / GitHub", category: "工程化" },
+  { name: "Docker", category: "工程化" },
   { name: "Vercel", category: "工程化" },
   // 编程基础
   { name: "C", category: "编程基础" },

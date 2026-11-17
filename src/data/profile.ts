@@ -48,11 +48,11 @@ export const profile: Profile = {
   role: "学生 · Web 开发者",
   tagline: "学习、造东西、分享代码。",
   intro:
-    "长沙工业学院在读学生，日常用 React + TypeScript 写网页和小工具，也写 C 语言的基础练习。喜欢把想法做成能跑起来的东西。",
+    "长沙工业学院计算机科学与技术在读，日常用 React + TypeScript 写网页和工具应用，也写 C 语言练习、参与开源项目。喜欢把想法做成能跑起来的东西。",
   bio: [
-    "我是 Junzhong Mao，长沙工业学院的在读学生。平时主要写前端，用 React、TypeScript 和 Tailwind CSS 做页面，最近把作品集、番茄钟、待办清单这几个练手项目陆续做完了。",
-    "除了网页，我也在写 C 语言的基础练习，并关注 Minecraft 服务端生态——GitHub 上有一些相关的仓库和 fork，用来学习和配置。",
-    "我的 GitHub 简介是「Learning, building, and sharing code」，也确实是这样：边学边做，再把代码放到 GitHub 上。欢迎交流或者一起做点东西。",
+    "我是 Junzhong Mao（MaoCat），长沙工业学院计算机科学与技术专业的在读学生。平时主要写前端，用 React、TypeScript 和 Tailwind CSS 做应用，最近在完成个人作品集和番茄钟之后，又用 React 19 + Zustand + date-fns 做出了进阶版待办事项管理应用。",
+    "除了前端开发，我也在扎实推进 C 语言的基础练习，并活跃在 Minecraft 服务端与周边开源生态中——不仅自己搭站和配置服务，也给群服互通机器人 UniBot 等开源项目提交过 Docker 部署与健康检查相关的 PR。",
+    "我的 GitHub 简介是「Learning, building, and sharing code」，也确实是这样：边学边做，从需求与技术设计文档到代码落地，再把成果分享到 GitHub 上。欢迎交流或者一起做点东西。",
   ],
   school: {
     name: "长沙工业学院",
@@ -65,5 +65,8 @@ export const profile: Profile = {
     { label: "项目", href: "#projects" },
     { label: "联系", href: "#contact" },
   ],
-  socials: [{ label: "GitHub", href: "https://github.com/maocat823" }],
+  socials: [
+    { label: "GitHub", href: "https://github.com/maocat823" },
+    { label: "Bilibili", href: "https://space.bilibili.com/695116963" },
+  ],
 };

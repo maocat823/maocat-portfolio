@@ -34,6 +34,15 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/maocat823/maocat-portfolio",
   },
   {
+    id: "todo-advanced",
+    name: "待办事项管理（进阶版）",
+    description:
+      "基于 React 19 + Zustand 5 构建的进阶待办应用，支持分类与优先级管理、多条件交集筛选、实时模糊搜索、全局统计看板，以及基于 date-fns 的逾期提醒与 LocalStorage 容错持久化。",
+    tech: ["React", "TypeScript", "Zustand", "Tailwind CSS", "date-fns", "Vite"],
+    liveUrl: "https://to-do-lemonfate.vercel.app",
+    repoUrl: "https://github.com/maocat823/To-Do",
+  },
+  {
     id: "pomodoro",
     name: "番茄钟",
     description:
@@ -43,9 +52,9 @@ export const projects: Project[] = [
   },
   {
     id: "todo-list",
-    name: "待办清单",
+    name: "待办清单（原生 JS 版）",
     description:
-      "原生 JavaScript 写的待办应用，支持优先级、编辑与筛选，数据保存在浏览器 localStorage 里，刷新不丢。",
+      "早期用原生 JavaScript 写的轻量待办应用，支持优先级、编辑与筛选，数据保存在浏览器 localStorage 里；后续在此基础上重构出了 React 进阶版。",
     tech: ["JavaScript", "HTML", "CSS", "Vite"],
     repoUrl: "https://github.com/maocat823/Todo-List",
   },
